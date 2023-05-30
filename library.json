@@ -1,0 +1,25 @@
+{
+    "name": "DFPlayer Arduino",
+    "version": "1.0.0",
+    "description": "The Arduino-library for my DFPlayer library. Needs the core-library to function.",
+    "keywords": "dlplayer, mp3, player, core",
+    "dependencies":
+    [
+      {
+        "owner": "Fabian Hofmann",
+        "name": "DFPlayer Core",
+        "version": "*"
+      }
+    ],
+    "authors":
+    [
+      {
+        "name": "Fabian Hofmann",
+        "email": "fabi.hofmann@gmx.at"
+      }
+    ],
+    "license": "MIT",
+    "frameworks": "*",
+    "platforms": "*"
+  }
+  
