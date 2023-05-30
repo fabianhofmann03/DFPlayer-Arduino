@@ -2,7 +2,7 @@
     "name": "DFPlayer Arduino",
     "version": "1.0.0",
     "description": "The Arduino-library for my DFPlayer library. Needs the core-library to function.",
-    "keywords": "dlplayer, mp3, player, core",
+    "keywords": "dlplayer, mp3, player, arduino",
     "dependencies":
     [
       {
