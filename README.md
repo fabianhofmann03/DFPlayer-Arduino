@@ -2,7 +2,8 @@
 ## Overview
 This library is for the DFRobot MP3 player. [Datasheet used](http://www.robotsforfun.com/datasheets/DFPlayer.pdf)
 
-For Arduino, [DFPlayer Core](https://github.com/fabianhofmann03/DFPlayerCore) required to work.
+For Arduino.
+[DFPlayer Core](https://github.com/fabianhofmann03/DFPlayerCore) required to work.
 
 ## Setup
 
