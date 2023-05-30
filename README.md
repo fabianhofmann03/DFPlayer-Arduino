@@ -1,4 +1,4 @@
-# dfplayer
+# DFPlayer Arduino
 ## Overview
 This library is for the DFRobot MP3 player. [Datasheet used](http://www.robotsforfun.com/datasheets/DFPlayer.pdf)
 
