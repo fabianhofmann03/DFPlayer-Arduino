@@ -233,15 +233,9 @@ void dfplayer::specifyTackInFolder(uint8_t folder, uint8_t num)
  * @param On If the amplification should be turned on or not.
  * @param Gain For the gains 💪. Can range from 0 to 31.
  */
-void dfplayer::setAudioAmp(bool on, uint8_t gain)
+void dfplayer::setAudioAmp(bool on, uint8_t gain = 0)
 {
   ::setAudioAmp(on, gain);
-  dfplayer::sendCommand();
-}
-
-void dfplayer::setAudioAmp(bool on)
-{
-  ::setAudioAmp(on, 0);
   dfplayer::sendCommand();
 }
 

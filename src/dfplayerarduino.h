@@ -51,7 +51,6 @@ class dfplayer {
         void pause();                                                   // 0E
         void specifyTackInFolder(uint8_t folder, uint8_t num);          // 0F
         void setAudioAmp(bool on, uint8_t gain);                        // 10
-        void setAudioAmp(bool on);
         void setAllRepeatPlayback(bool on);                             // 11
         void specifyTrackInMP3(uint16_t num);                           // 12
         void insetAd(uint16_t num);                                     // 13
