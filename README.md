@@ -7,7 +7,7 @@ For Arduino.
 
 ## Setup
 
-To use the dfplayer you have to initialize it first. There you have to give it the pointer to the Serial port that the module uses (Supports Software and HardwareSerial).
+To use the dfplayer you have to initialize it first. There you have to give it the pointer to the Serial port that the module uses. Supports Software and HardwareSerial.
 ```
 dfplayer player(&Serial3);
 ```
@@ -56,7 +56,7 @@ Here are the functions you can use to do stuff. They're in order of the command 
 
 ## Responses
 
-The module returns responses to certain events.
+The module returns responses to certain events. When using SoftwareSerial, you have to call the `Serial.listen();` function yourself.
 To get access to the responses you can make a response handler. A response handler looks like this:
 ```cpp
 void responseHandler(uint8_t vers, uint8_t len, uint8_t cmd, uint8_t feedb, uint16_t param);
@@ -67,7 +67,7 @@ To add the response handler to the dfplayer you can use the function `setRespons
 player.setResponseHandler(&responseHandler);
 ```
 You can also use the default response handler by using:
-```
+```cpp
 player.setDefaultResponseHandler();
 ```
 The default response handler prints out an explanation of the response like "Track number 2 finished playing from the SD card." 
