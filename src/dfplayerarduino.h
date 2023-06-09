@@ -29,6 +29,9 @@ class dfplayer {
 
         dfplayer (HardwareSerial *new_stream);
         dfplayer (SoftwareSerial *new_stream);
+
+        ~dfplayer ();
+
         void setup();                                                   // Setup the thing
         void setResponseHandler(void (*respHand) (uint8_t vers, uint8_t len, uint8_t cmd, uint8_t feedb, uint16_t param));    // Set the response handler
         void removeResponseHandler();                                   // Removes the response handler => sets response handler to NULL

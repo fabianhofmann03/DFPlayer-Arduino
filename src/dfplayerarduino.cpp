@@ -16,6 +16,12 @@ dfplayer::dfplayer(SoftwareSerial *new_stream)
   this->stream = new_stream;
 }
 
+dfplayer::~dfplayer() {
+  if(this->hardws) {
+    static_cast<HardwareSerial *>(this->stream)->end();
+  }
+}
+
 /**
  * Starts the Serial port of the dfplayer object.
  */
