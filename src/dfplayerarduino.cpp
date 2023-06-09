@@ -20,6 +20,10 @@ dfplayer::~dfplayer() {
   if(this->hardws) {
     static_cast<HardwareSerial *>(this->stream)->end();
   }
+  else
+  {
+    static_cast<SoftwareSerial *>(this->stream)->end();
+  }
 }
 
 /**
